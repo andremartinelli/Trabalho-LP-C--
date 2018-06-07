@@ -21,6 +21,8 @@ class Lista
     void remove(int i);
     void imprime();
     void ordena(int (*f)(T, T));
+    T getElement(int i);
+    int lenth();
 
   private:
     node<T> *head;
@@ -103,7 +105,38 @@ template <class T>
 void Lista<T>::ordena(int (*f)(T, T))
 {
     node<T> *aux;
-    node<T> *ant;
-    int i = 99;
+    T element;
+    int i = 0;
+    for (curr = head; curr != NULL; curr = curr->prox)
+    {
+        for (aux = curr->prox; aux != NULL; aux = aux->prox)
+        {
+            if ((*f)(curr->ele, aux->ele) == 1)
+            {
+                element = curr->ele;
+                curr->ele = aux->ele;
+                aux->ele = element;
+            }
+        }
+    }
+}
 
+template <class T>
+T Lista<T>::getElement(int i)
+{
+    curr = head;
+    while(i != 0){
+        curr = curr->prox;
+        i--;
+    }
+    return curr->ele;
+}
+
+template<class T>
+int Lista<T>::lenth(){
+    int i = 0;
+    for(curr = head; curr != NULL; curr = curr->prox){
+        i++;
+    }
+    return i;
 }

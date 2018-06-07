@@ -14,9 +14,9 @@ class Imovel
   public:
     Imovel();
     Imovel(string nome, int ident);
-    string getNome();
-    int getIdent();
-    float getValor();
+    string getNome()const;
+    int getIdent()const;
+    float getValor() const;
     void setValor(float v);
 };
 

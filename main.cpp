@@ -6,20 +6,31 @@
 #include "Casa.h"
 #include "Apartamento.h"
 
-
-
 using namespace std;
 
-
-int teste(int i, int j){
-    if(i < j){
+int ordena_a(const Imovel a, const Imovel b)
+{
+    if (a.getValor() < b.getValor())
+    {
         return 1;
+    }
+    if (a.getValor() == b.getValor())
+    {
+        if (a.getIdent() < b.getIdent())
+        {
+            return 1;
+        }
     }
     return 0;
 }
 
-int main(){
+int main()
+{
     // le_catalogo();
-    
+    // int i = l.lenth();
+    // for(int cont = 0; cont < i; cont ++){
+    // cout << l.getElement(cont).getNome() << endl;
+    // }
+
     return 0;
 }
