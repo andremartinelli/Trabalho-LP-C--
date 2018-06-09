@@ -9,9 +9,12 @@ class Casa: public Residencia
     float apavimento;
     float alivre;
     int palivre;
+    string tipo;
 
   public:
     Casa(string nome, int ident, int quartos, int precom2, int vagas, int numpavimentos, float apavimento, float alivre, int palivre);
+    void setValor();
+    string defineTipo();
 };
 
 

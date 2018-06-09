@@ -17,7 +17,8 @@ class Imovel
     string getNome()const;
     int getIdent()const;
     float getValor() const;
-    void setValor(float v);
+    virtual void setValor();
+    virtual string defineTipo();
 };
 
 

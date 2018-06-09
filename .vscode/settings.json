@@ -2,6 +2,11 @@
     "files.associations": {
         "ostream": "cpp",
         "cstdio": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "istream": "cpp",
+        "iosfwd": "cpp",
+        "vector": "cpp",
+        "typeinfo": "cpp"
     }
 }
