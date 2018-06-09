@@ -14,3 +14,6 @@ float Terreno::fator_multiplicativo(){
     }
     return 1.1;
 }
+
+
+float Terreno::area(){}

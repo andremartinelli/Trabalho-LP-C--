@@ -11,6 +11,7 @@ class Terreno: public Imovel
   public:
     Terreno(string nome, int ident, int precom2, char solo);
     float fator_multiplicativo();
+    virtual float area();
 };
 
 

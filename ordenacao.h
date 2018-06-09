@@ -13,3 +13,13 @@
 int ordena_a(Imovel *a, Imovel *b);
 
 Lista<Imovel*> recorta_a(vector<int> espec, Lista<Imovel*> l);
+
+
+Lista<Imovel*> recorta_b(vector<int> espec, Lista<Imovel*> l);
+
+int ordena_b(Imovel *a, Imovel *b);
+
+
+Lista<Imovel*> recorta_c(vector<int> espec, Lista<Imovel*> l);
+
+int ordena_c(Imovel *a, Imovel *b);

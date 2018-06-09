@@ -22,7 +22,7 @@ class Lista
     void imprime();
     void ordena(int (*f)(T, T));
     T getElement(int i);
-    int lenth();
+    int lenght();
     void remove_primeiro();
 
   private:
@@ -135,7 +135,7 @@ T Lista<T>::getElement(int i)
 }
 
 template <class T>
-int Lista<T>::lenth()
+int Lista<T>::lenght()
 {
     int i = 0;
 

@@ -254,7 +254,7 @@ Lista<Imovel *> le_atual(Lista<Imovel *> l)
                 getline(in, str);
                 totalandares = atoi(str.c_str());
                 Imovel* ap = new Apartamento(nome, identificador, quartos, precom2, vagas, andar, aconstruida, alazer, totalandares);
-                for (int i = 0; i < l.lenth(); i++)
+                for (int i = 0; i < l.lenght(); i++)
                 {
                     if (l.getElement(i)->getIdent() == identificador)
                     {
@@ -286,7 +286,7 @@ Lista<Imovel *> le_atual(Lista<Imovel *> l)
                 palivre = atoi(str.c_str());
                 Imovel* ca = new Casa(nome, identificador, quartos, precom2, vagas, pavimentos, apavimento, alivre, palivre);
                 l.insere(ca);
-                for (int i = 0; i < l.lenth(); i++)
+                for (int i = 0; i < l.lenght(); i++)
                 {
                     if (l.getElement(i)->getIdent() == identificador)
                     {
@@ -311,7 +311,7 @@ Lista<Imovel *> le_atual(Lista<Imovel *> l)
                 altura = atof(str.c_str());
                 Imovel* tr = new Triangulo(nome, identificador, precom2, solo, base1, altura);
                 l.insere(tr);
-                for (int i = 0; i < l.lenth(); i++)
+                for (int i = 0; i < l.lenght(); i++)
                 {
                     if (l.getElement(i)->getIdent() == identificador)
                     {
@@ -336,7 +336,7 @@ Lista<Imovel *> le_atual(Lista<Imovel *> l)
                 altura = atof(str.c_str());
                 Imovel* ret = new Retangulo(nome, identificador, precom2, solo, base1, altura);
                 l.insere(ret);
-                for (int i = 0; i < l.lenth(); i++)
+                for (int i = 0; i < l.lenght(); i++)
                 {
                     if (l.getElement(i)->getIdent() == identificador)
                     {
@@ -363,7 +363,7 @@ Lista<Imovel *> le_atual(Lista<Imovel *> l)
                 altura = atof(str.c_str());
                 Imovel* trap = new Trapezio(nome, identificador, precom2, solo, base1, base2, altura);
                 l.insere(trap);
-                for (int i = 0; i < l.lenth(); i++)
+                for (int i = 0; i < l.lenght(); i++)
                 {
                     if (l.getElement(i)->getIdent() == identificador)
                     {
@@ -377,7 +377,7 @@ Lista<Imovel *> le_atual(Lista<Imovel *> l)
         {
             getline(in, str);
             identificador = atoi(str.c_str());
-            for (int i = 0; i < l.lenth(); i++)
+            for (int i = 0; i < l.lenght(); i++)
             {
                 if (l.getElement(i)->getIdent() == identificador)
                 {
