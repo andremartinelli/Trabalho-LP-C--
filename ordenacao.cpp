@@ -64,8 +64,10 @@ Lista<Imovel *> recorta_b(vector<int> espec, Lista<Imovel *> l)
         }
     }
 
+
+    lbcomplete.ordena(ordena_b);
     float eliminar;
-    eliminar = espec.operator[](1) * l.lenght() / 100.0;
+    eliminar = espec.operator[](1) * lbcomplete.lenght() / 100.0;
     eliminar = floor(eliminar);
     int i = lbcomplete.lenght();
     eliminar = lbcomplete.lenght() - eliminar;

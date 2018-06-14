@@ -44,7 +44,6 @@ int main()
     // }
     // cout << endl;
     lb = recorta_b(espec, lb);
-    lb.ordena(ordena_b);
     // for (int cont = 0; cont != lb.lenght(); cont++)
     // {
     //     cout << lb.getElement(cont)->getIdent() <<", ";

@@ -42,15 +42,15 @@ void imprime_result(Lista<Imovel *> l, Lista<Imovel *> lb, Lista<Imovel *> lc, v
     i = 0;
     j = 0;
     k = 0;
-    if (l.lenght() >= espec.operator[](4))
+    if (l.lenght() >= espec.operator[](4) && espec.operator[](4) != 0)
     {
         i = l.getElement(espec.operator[](4)-1)->getIdent();
     }
-    if (lb.lenght() >= espec.operator[](5))
+    if (lb.lenght() >= espec.operator[](5) && espec.operator[](5) != 0)
     {
         j = lb.getElement(espec.operator[](5)-1)->getIdent();
     }
-    if (lc.lenght() >= espec.operator[](6))
+    if (lc.lenght() >= espec.operator[](6) && espec.operator[](6) != 0)
     {
         k = lc.getElement(espec.operator[](6)-1)->getIdent();
     }
